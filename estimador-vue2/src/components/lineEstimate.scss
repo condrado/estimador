@@ -1,0 +1,67 @@
+.hide {
+  display: none;
+}
+
+@import '../assets/styles/styles.scss';
+
+form {
+
+
+  .v-btn {
+    border-radius: 0;
+    box-shadow: none;
+    border-top: 0;
+    height: auto;
+
+    &.v-size--default {
+      background-color: transparent;
+      height: auto;
+      border-left: 1px solid $c-white-40;
+      margin: 5px 0;
+
+      &:hover {
+        &::before {
+          display: none;
+        }
+        
+        i {
+          -webkit-transform: rotate(180deg);
+          -moz-transform: rotate(180deg);
+          -o-transform: rotate(180deg);
+          -ms-transform: rotate(180deg);
+          transform: rotate(180deg);
+        }
+      }
+
+      i {
+        margin: 0;
+        color: $c-white;
+      }
+    }
+  }
+}
+
+fieldset {
+  width: 100%;
+  display: flex;
+  border: 0;;
+  padding: 0;
+}
+
+.form-fielset {
+  margin-top: -1px;
+  padding: 0;
+  border-bottom: 1px solid $c-white-40;
+}
+
+.select-wrapper input.select-dropdown {
+  padding: 0 20px;
+}
+
+
+.btn-remove {
+  border-left: 0;
+}
+
+
+

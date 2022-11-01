@@ -1,0 +1,19 @@
+select {
+  background-color: transparent;
+  height: rem(32);
+  border-radius: 0;
+  border: 0;
+  padding: 0 rem(12);
+  width: calc(100% / 3);
+  -moz-appearance: auto;
+  -webkit-appearance: auto;
+  border-left: 1px solid $color-light-40;
+  margin-left: rem(12);
+  color: $color-light;
+}
+
+.select-group {
+  display: flex;
+  width: calc(70% - 114px);
+  padding: 5px 0;
+}

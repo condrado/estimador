@@ -1,0 +1,86 @@
+.c-form {
+  &__fielset {
+    display: flex;
+    border-bottom: 0;
+    border-top: 1px solid $color-light-40;
+    border-left: 1px solid $color-light-40;
+    border-right: 1px solid $color-light-40;
+    padding: 0;
+    margin: 0;;
+
+    &:hover {
+      background-color: $color-light-5;
+    }  
+
+    &:last-child {
+      border-bottom: 1px solid $color-light-40;
+    }
+  }
+
+  .inputDescription,
+  &__input  {
+    color: $color-light;
+  }
+
+  .inputDescription {
+    padding: 0 rem(12);
+    width: 30%;
+  }
+
+  &__input {
+    padding: 0 rem(12);
+    width: rem(50);
+    text-align: center;
+    border-left: 1px solid $color-light-40;
+    border-right: 1px solid $color-light-40;
+    margin: rem(5) 0 rem(5) rem(12);
+
+    &--plus {
+      margin-left: 0;
+      border-left: 0;
+    }
+  }
+
+  .c-btn {
+    border-radius: 0;
+    box-shadow: none;
+    border: 0;
+    height: auto;
+    background-color: transparent;
+    color: $color-light;
+    position: relative;
+    padding: 0;
+    width: rem(50);
+
+    &:hover {
+      i {
+        &::before {
+          -webkit-transform: rotate(180deg);
+          -moz-transform: rotate(180deg);
+          -o-transform: rotate(180deg);
+          -ms-transform: rotate(180deg);
+          transform: rotate(180deg);
+          -webkit-transition: all 0.3s ease-in-out;
+          -moz-transition: all 0.3s ease-in-out;
+          -o-transition: all 0.3s ease-in-out;
+          transition: all 0.3s ease-in-out;
+        }
+      }
+    }
+
+    i {
+      margin: 0;
+      font-size: rem(20);
+      line-height: rem(12);
+      vertical-align: middle;
+
+      &::before {
+        -webkit-transition: all 0.3s ease-in-out;
+        -moz-transition: all 0.3s ease-in-out;
+        -o-transition: all 0.3s ease-in-out;
+        transition: all 0.3s ease-in-out;
+        line-height: rem(21);
+      }
+    }
+  }
+}

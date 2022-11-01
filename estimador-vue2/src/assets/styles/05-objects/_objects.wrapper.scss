@@ -1,0 +1,28 @@
+/* ==========================================================================
+   #WRAPPER-OBJECT
+   ========================================================================== */
+
+.o-wrapper {
+  flex: 1 0 auto;
+  overflow: visible;
+  display: flex;
+}
+
+.o-col {
+  &__left {
+    min-width: rem(250);
+    padding: rem(8);
+    margin: 0;
+    background-color: $c-bg-secundary;
+
+    .c-btn {
+      width: 100%;
+    }
+  }
+
+  &__right {
+    padding: rem(8);
+    width: calc(100% - 250px);
+    margin: 0;
+  }
+}

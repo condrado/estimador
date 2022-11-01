@@ -1,0 +1,116 @@
+{
+    "template": [
+        {
+            "title": "Página",
+            "value": "page"
+        },
+        {
+            "title": "Componente",
+            "value": "component"
+        }
+    ],
+    "types": [
+        {
+            "title": "Home",
+            "value": "home",
+            "parent": "page"
+        },
+        {
+            "title": "Plantilla",
+            "value": "template",
+            "parent": "page"
+        },
+        {
+            "title": "HTML + CSS",
+            "value": "html+css",
+            "parent": "component"
+        },
+        {
+            "title": "Javascript",
+            "value": "javascript",
+            "parent": "component"
+        }
+    ],
+    "complexity": [
+        { 
+            "title": "+ Simple",
+            "value": 6,
+            "parent": "home"
+        },
+        { 
+            "title": "Simple",
+            "value": 8,
+            "parent": "home"
+        },
+        { 
+            "title": "Medio",
+            "value": 16,
+            "parent": "home"
+        },
+        { 
+            "title": "Complejo",
+            "value": 24,
+            "parent": "home"
+        },
+        { 
+            "title": "+ Simple",
+            "value": 3,
+            "parent": "template"
+        },
+        { 
+            "title": "Simple",
+            "value": 4,
+            "parent": "template"
+        },
+        { 
+            "title": "Medio",
+            "value": 8,
+            "parent": "template"
+        },
+        { 
+            "title": "Complejo",
+            "value": 16,
+            "parent": "template"
+        },
+        { 
+            "title": "+ Simple",
+            "value": 1,
+            "parent": "html+css"
+        },
+        { 
+            "title": "Simple",
+            "value": 2,
+            "parent": "html+css"
+        },
+        { 
+            "title": "Medio",
+            "value": 4,
+            "parent": "html+css"
+        },
+        { 
+            "title": "Complejo",
+            "value": 6,
+            "parent": "html+css"
+        },
+        { 
+            "title": "+ Simple",
+            "value": 1,
+            "parent": "javascript"
+        },
+        { 
+            "title": "Simple",
+            "value": 2,
+            "parent": "javascript"
+        },
+        { 
+            "title": "Medio",
+            "value": 5,
+            "parent": "javascript"
+        },
+        { 
+            "title": "Complejo",
+            "value": 8,
+            "parent": "javascript"
+        }
+    ]
+}

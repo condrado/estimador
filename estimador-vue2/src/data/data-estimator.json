@@ -1,0 +1,116 @@
+{
+    "template": [
+        {
+            "title": "Página",
+            "value": "page"
+        },
+        {
+            "title": "Componente",
+            "value": "component"
+        }
+    ],
+    "types": [
+        {
+            "title": "Home",
+            "value": "home",
+            "parent": "page"
+        },
+        {
+            "title": "Plantilla",
+            "value": "template",
+            "parent": "page"
+        },
+        {
+            "title": "HTML + CSS",
+            "value": "html+css",
+            "parent": "component"
+        },
+        {
+            "title": "Javascript",
+            "value": "javascript",
+            "parent": "component"
+        }
+    ],
+    "complexity": [
+        { 
+            "title": "A",
+            "value": 6,
+            "parent": "home"
+        },
+        { 
+            "title": "B",
+            "value": 8,
+            "parent": "home"
+        },
+        { 
+            "title": "C",
+            "value": 16,
+            "parent": "home"
+        },
+        { 
+            "title": "D",
+            "value": 24,
+            "parent": "home"
+        },
+        { 
+            "title": "A",
+            "value": 3,
+            "parent": "template"
+        },
+        { 
+            "title": "B",
+            "value": 4,
+            "parent": "template"
+        },
+        { 
+            "title": "C",
+            "value": 8,
+            "parent": "template"
+        },
+        { 
+            "title": "D",
+            "value": 16,
+            "parent": "template"
+        },
+        { 
+            "title": "A",
+            "value": 1,
+            "parent": "html+css"
+        },
+        { 
+            "title": "B",
+            "value": 2,
+            "parent": "html+css"
+        },
+        { 
+            "title": "C",
+            "value": 4,
+            "parent": "html+css"
+        },
+        { 
+            "title": "D",
+            "value": 6,
+            "parent": "html+css"
+        },
+        { 
+            "title": "A",
+            "value": 1,
+            "parent": "javascript"
+        },
+        { 
+            "title": "B",
+            "value": 2,
+            "parent": "javascript"
+        },
+        { 
+            "title": "C",
+            "value": 5,
+            "parent": "javascript"
+        },
+        { 
+            "title": "D",
+            "value": 8,
+            "parent": "javascript"
+        }
+    ]
+}

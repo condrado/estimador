@@ -1,0 +1,26 @@
+@import '../assets/styles/styles.scss';
+
+.container--fluid {
+  display: flex;
+}
+
+.list-group {
+  width: 100%;
+}
+  
+.button-group {
+  background-color: $c-bg-secundary;
+  width: 300px;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  padding: 7px 8px;
+  box-shadow: 0px 3px 1px -2px rgb(0 0 0 / 20%), 0px 2px 2px 0px rgb(0 0 0 / 14%), 0px 1px 5px 0px rgb(0 0 0 / 12%);
+
+  .v-size--default {
+    height: 44px;
+    border-radius: 0;
+    min-width: 100%;
+  }
+  
+}
