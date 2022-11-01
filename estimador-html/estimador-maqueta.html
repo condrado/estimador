@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,600;1,200&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/styles.css">
+
+    <title>Document</title>
+</head>
+<body class="est-body">
+    <div class="est-content">
+        <div class="est-logo">
+            <figure >
+                <img src="images/logo.png" alt="logotipo">
+            </figure>
+        </div>
+        <div class="est-tabs">
+            <ul>
+                <li>
+                    <a href="estimador-maqueta.html" data-id="tab-1">Est. Maqueta</a>
+                </li>
+                <li>
+                    <a href="estimador-spa.html" data-id="tab-2">Est. SPA</a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="est-page" id="tab-1">
+            <h1 class="est-h1">Estiamdor - <span class="est-subtitle">Proyectos de maqueta</span></h1>
+            <section class="est-col">
+                <form class="est-form" action="">
+                    <fieldset class="est-form__fieldset">
+                        <legend class="est-form__fieldset-leyend">Proyecto: <span id="nameProyect"></span></legend>
+                        <div class="est-table-box">
+                            <table class="est-table-basic">
+                                <thead>
+                                    <tr>
+                                        <th class="est-table__th-2">Descipción</th>
+                                        <th class="est-table__th-1">Tipo</th>
+                                        <th class="est-table__th-3">Subtipo</th>
+                                        <th class="est-table__th-4">Complejidad</th>
+                                        <th class="est-table__th-5">Horas</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr class="est-table__th-base" data-cont="">
+                                        <td>
+                                            <input type="text" data-id="description">
+                                        </td>
+                                        <td>
+                                            <select name="" data-id="component">
+                                                <option value="0"></option>
+                                                <option value="1">Componente</option>
+                                                <option value="2">Página</option>
+                                            </select>
+                                        </td>
+                                        <td>
+                                            <select class="hidden" name="" data-id="type1" >
+                                                <option value="0"></option>
+                                                <option value="html">HTML + CSS</option>
+                                                <option value="js">JS</option>
+                                            </select>
+                                            <select class="hidden" data-id="type2">
+                                                <option value="0"></option>
+                                                <option value="home">Home</option>
+                                                <option value="template">Plantilla</option>
+                                            </select>
+                                        </td>
+                                        <td>
+                                            <select class="hidden" name="" data-id="complexity">
+                                                <option value="0"></option>
+                                                <option value="1">Simple +</option>
+                                                <option value="2">Simple</option>
+                                                <option value="3">Medio</option>
+                                                <option value="4">Complejo</option>
+                                            </select>
+                                        </td>
+                                        <td>
+                                            <span data-id="hours" class="est-form__hours"></span>
+                                        </td>
+                                    </tr>
+    
+                                </tbody>
+                            </table>
+                        </div>
+                    </fieldset>
+                </form>
+            </section>
+            <section class="est-col">
+                <div class="est-config" >
+                    <h3 class="est-h3">Configuración</h3>
+                    <p class="est-summary-text">
+                        <span  class="est-summary-title">Accesibilidad:</span>
+                        <!-- <input type="text" class="est-summary-desc" id="accesivility-input"> -->
+                        <select class="" id="accesivility-select">
+                            <option value="1">AA Partial</option>
+                            <option value="2">AA Strict</option>
+                            <option value="3">AAA</option>
+                        </select>
+                    </p>
+                    <p class="est-summary-text">
+                        <span  class="est-summary-title">Navegadores:</span>
+                        <!-- <input type="text" class="est-summary-desc" id="browser-input"> -->
+                        <select class="" id="browser-select">
+                            <option value="1">Ultima versión</option>
+                            <option value="2">Versión < IE11</option>
+                        </select>
+                    </p>
+                    <p class="est-summary-text">
+                        <span  class="est-summary-title">Expereicia equipo:</span>
+                        <!-- <input type="text" class="est-summary-desc" id="team_experience-input"> -->
+                        <select class="" id="team_experience-select">
+                            <option value="1">Muy alta</option>
+                            <option value="2">Alta</option>
+                            <option value="3">Media</option>
+                            <option value="4">Baja</option>
+                        </select>
+                    </p>
+                    <p class="est-summary-text">
+                        <span  class="est-summary-title">Responsive</span>
+                        <!-- <input type="text" class="est-summary-desc" id="responsive-input"> -->
+                        <select class="" id="responsive-select">
+                            <option value="1">No responsive</option>
+                            <option value="2">2 Breackpoints</option>
+                            <option value="3">3 Breackpoints</option>
+                        </select>
+                    </p>
+                    <p class="est-summary-text">
+                        <label>
+                            <span  class="est-summary-title">Pruebas</span>
+                            <input type="checkbox" class="est-summary-desc" id="test-input">
+                        </label>
+                    </p>
+                    <p class="est-summary-text">
+                        <label>
+                            <span  class="est-summary-title">Repositorio</span>
+                            <input type="checkbox" class="est-summary-desc" id="repository-input">
+                        </label>
+                    </p>
+                    <p class="est-summary-text">
+                        <label>
+                            <span  class="est-summary-title">Analitica</span>
+                            <input type="checkbox" class="est-summary-desc" id="analytics-input">
+                        </label>
+                    </p>
+                </div>
+
+                <div class="est-config" >
+                    <h3 class="est-h3">Resumen</h3>
+                    <p class="est-summary-text">
+                        <span  class="est-summary-title">Núm. componentes:</span>
+                        <span class="est-summary-desc" id="num_comp">0</span>
+                    </p>
+                    <p class="est-summary-text">
+                        <span  class="est-summary-title">Núm. páginas:</span>
+                        <span class="est-summary-desc" id="num_page">0</span>
+                    </p>
+                    <p class="est-summary-text">
+                        <span  class="est-summary-title">Accesibilidad:</span>
+                        <span class="est-summary-desc" id="accesivility">0,00</span>
+                    </p>
+                    <p class="est-summary-text">
+                        <span  class="est-summary-title">Navegadores:</span>
+                        <span class="est-summary-desc" id="browser">0,00</span>
+                    </p>
+                    <p class="est-summary-text">
+                        <span  class="est-summary-title">Expereicia equipo:</span>
+                        <span class="est-summary-desc" id="team_experience">0,00</span>
+                    </p>
+                    <p class="est-summary-text">
+                        <span  class="est-summary-title">Responsive</span>
+                        <span class="est-summary-desc" id="responsive">0,00</span>
+                    </p>
+                    <p class="est-summary-text">
+                        <span  class="est-summary-title">Pruebas</span>
+                        <span class="est-summary-desc" id="test">0,00</span>
+                    </p>
+                    <p class="est-summary-text">
+                        <span  class="est-summary-title">Repositorio</span>
+                        <span class="est-summary-desc" id="repository">0,00</span>
+                    </p>
+                    <p class="est-summary-text">
+                        <span  class="est-summary-title">Analitica</span>
+                        <span class="est-summary-desc" id="analytics">0,00</span>
+                    </p>
+                    <p class="est-summary-text bold">
+                        <span class="est-summary-title">Total</span>
+                        <span class="est-summary-desc">
+                            <span id="totalHours">0</span>
+                            <span class="est-summary-desc-info" >h</span>
+                        </span>
+                        <span class="est-summary-desc ">
+                            <span id="totalDays">0</span>
+                            <span class="est-summary-desc-info" >días</span>
+                        </span>
+                    </p>
+                </div>
+            </section>
+            <a class="esp-database" href="estimador-data.html" target="_blank">
+                <i class="est-icon icon-database"></i>
+            </a>
+            <div class="est-menu">
+                <div class="est-menu__content">
+                    <div class="est-col">
+                        <h3>Tipo Componente</h3>
+                        <table class="est-table-basic type1">
+                            <thead>
+                                <tr>
+                                    <th></th>
+                                    <th>HTML+CSS</th>
+                                    <th>Javascript</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        Simple +
+                                    </td>
+                                    <td>
+                                        <input type="text" id="component-html-1">
+                                    </td>
+                                    <td>
+                                        <input type="text" id="component-js-1">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        Simple
+                                    </td>
+                                    <td>
+                                        <input type="text" id="component-html-2">
+                                    </td>
+                                    <td>
+                                        <input type="text" id="component-js-2">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        Medio
+                                    </td>
+                                    <td>
+                                        <input type="text" id="component-html-3">
+                                    </td>
+                                    <td>
+                                        <input type="text" id="component-js-3">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        Complejo
+                                    </td>
+                                    <td>
+                                        <input type="text" id="component-html-4">
+                                    </td>
+                                    <td>
+                                        <input type="text" id="component-js-4">
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="est-col">
+                        <h3>Tipo Página</h3>
+                        <table class="est-table-basic type1">
+                            <thead>
+                                <tr>
+                                    <th></th>
+                                    <th>Home</th>
+                                    <th>Plantilla</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        Simple +
+                                    </td>
+                                    <td>
+                                        <input type="text" id="page-home-1">
+                                    </td>
+                                    <td>
+                                        <input type="text" id="page-template-1">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        Simple
+                                    </td>
+                                    <td>
+                                        <input type="text" id="page-home-2">
+                                    </td>
+                                    <td>
+                                        <input type="text" id="page-template-2">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        Medio
+                                    </td>
+                                    <td>
+                                        <input type="text" id="page-home-3">
+                                    </td>
+                                    <td>
+                                        <input type="text" id="page-template-3">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        Complejo
+                                    </td>
+                                    <td>
+                                        <input type="text" id="page-home-4">
+                                    </td>
+                                    <td>
+                                        <input type="text" id="page-template-4">
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="est-col">
+                        <h3>Accesibilidad</h3>
+                        <table class="est-table-basic col-3">
+                            <thead>
+                                <tr>
+                                    <th>AA Partial</th>
+                                    <th>AA Strict</th>
+                                    <th>AAA</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        <input type="text" id="accesivility-1">
+                                    </td>
+                                    <td>
+                                        <input type="text" id="accesivility-2">
+                                    </td>
+                                    <td>
+                                        <input type="text" id="accesivility-3">
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="est-col">
+                        <h3>Expereicia equipo</h3>
+                        <table class="est-table-basic col-4">
+                            <thead>
+                                <tr>
+                                    <th>Muy Alta</th>
+                                    <th>Alta</th>
+                                    <th>Media</th>
+                                    <th>Baja</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        <input type="text" id="team_experience-1">
+                                    </td>
+                                    <td>
+                                        <input type="text" id="team_experience-2">
+                                    </td>
+                                    <td>
+                                        <input type="text" id="team_experience-3">
+                                    </td>
+                                    <td>
+                                        <input type="text" id="team_experience-4">
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="est-col">
+                        <h3>Responsive</h3>
+                        <table class="est-table-basic col-3">
+                            <thead>
+                                <tr>
+                                    <th>No responsive</th>
+                                    <th>2 Puntos de corte</th>
+                                    <th>3 Puntos de corte</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        <input type="text" id="responsive-1">
+                                    </td>
+                                    <td>
+                                        <input type="text" id="responsive-2">
+                                    </td>
+                                    <td>
+                                        <input type="text" id="responsive-3">
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="est-col">
+                        <h3>Navegadores</h3>
+                        <table class="est-table-basic col-2">
+                            <thead>
+                                <tr>
+                                    <th>Ultima versión</th>
+                                    <th>Versión < IE11</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        <input type="text" id="browser-1">
+                                    </td>
+                                    <td>
+                                        <input type="text" id="browser-2">
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="est-col">
+                        <h3>Analítica</h3>
+                        <table class="est-table-basic col-1">
+                            <thead>
+                                <tr>
+                                    <th>Tagueo</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        <input type="text" id="analytics-1">
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="est-col">
+                        <h3>Pruebas</h3>
+                        <table class="est-table-basic col-1">
+                            <thead>
+                                <tr>
+                                    <th>Pruebas</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        <input type="text" id="test-1">
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="est-col">
+                        <h3>Repositorio</h3>
+                        <table class="est-table-basic col-1">
+                            <thead>
+                                <tr>
+                                    <th>Repositorio</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        <input type="text" id="repository-1">
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="est-col">
+                        <h3>Número de filas</h3>
+                        <table class="est-table-basic col-1">
+                            <thead>
+                                <tr>
+                                    <th>Número de filas</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        <input type="text" id="num_rows-1">
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <div class="est-group-btn">
+                    <button class="esp-database-save" id="save-data" type="button">
+                        Descacargar cambios
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="js/data.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/script-estimate.js"></script>
+</body>
+</html>
